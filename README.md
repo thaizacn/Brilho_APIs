@@ -2,6 +2,7 @@
 O objetivo deste projeto é desenvolver um aplicativo de caráter social que permita que os usuários resgatem cupons no Centro Velho de São Paulo, esse projeto será desenvolvido durante o Terceiro Semestre do curso Análise e Desenvolvimento de Sistemas do Centro Universitário Belas Artes de São Paulo.
 
 # Documentação ✉️
+[**Clique aqui para acessar a documentação da API**](https://brilho-api.onrender.com/docs#/?)
 ![image](https://github.com/thaizacn/brilho-python/assets/77704621/2d5a6499-f124-47df-bd40-4e04759cd100)
 
 ## Funcionalidades
