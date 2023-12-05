@@ -59,14 +59,21 @@ class BrilhoRepository:
 
         self.conn.commit()
 
-    def consultar_cupons(self) -> List[str]:
+    def consultar_cupons(self) -> List[CupomRequest]:
         cupons = []
+        
         with self.conn.cursor() as cursor:
             cursor.execute("SELECT * FROM cupons")
             for row in cursor.fetchall():
                 id, nome, codigo, data_validade, valor = row
-                cupon_string = f"ID: {id}, Nome: {nome}, Codigo: {codigo}, Validade: {data_validade}, Valor do cupom: {valor}"
-                cupons.append(cupon_string)
+                cupom = CupomRequest(
+                    id=id,
+                    cupomName=nome,
+                    cupomCode=codigo,
+                    cupomDate=data_validade,
+                    cupomValue=valor
+                )
+                cupons.append(cupom)
 
         return cupons
 

@@ -9,7 +9,7 @@ class BrilhoService:
     def __init__(self):
         self.brilho_repository = BrilhoRepository()
 
-    def get_cupons(self) -> List[str]:
+    def get_cupons(self) -> CupomRequest:
         return self.brilho_repository.consultar_cupons()
 
     def get_cupom_by_id(self, cupom_id: int) -> str:
